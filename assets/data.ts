@@ -24,6 +24,10 @@ export const pinyin = [
   "háikěyǐ",
   "xiōngdì",
   "jiěmèi",
+  "yǐjīng",
+  "rènzhēn",
+  "bùcuò",
+  "júzi",
 ];
 
 export const ch = [
@@ -52,6 +56,10 @@ export const ch = [
   "还可以",
   "兄弟",
   "姐妹",
+  "已经",
+  "认真",
+  "不错",
+  "橘子",
 ];
 
 export const jp = [
@@ -80,4 +88,8 @@ export const jp = [
   "まあまあである",
   "兄弟",
   "姉妹",
+  "すでに",
+  "真剣に",
+  "悪くない",
+  "みかん",
 ];
