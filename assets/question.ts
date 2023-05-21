@@ -1,9 +1,13 @@
 import { pinyin, ch, jp } from "./data";
 
-export const question: any = [];
+type questionType = {
+  jp: string;
+  ch: string;
+  pi: string;
+};
+
+export const questions: questionType[] = [];
 
 for (let i = 0; i < pinyin.length; i++) {
-  question.push({ jp: pinyin[i], ch: ch[i], pi: jp[i] });
+  questions.push({ jp: jp[i], ch: ch[i], pi: pinyin[i] });
 }
-
-console.log(question);
