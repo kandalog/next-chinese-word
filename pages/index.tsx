@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import styled from "@/styles/Home.module.scss";
 
-import { questions } from "@/assets/question";
+import { questions as materialQuestion } from "@/assets/question";
+import { useState } from "react";
 
 const handleOnClick = (e: React.MouseEvent<HTMLDivElement>) => {
   const target = e.currentTarget.nextElementSibling;
@@ -13,7 +12,24 @@ const removeActiveClass = (e: React.MouseEvent<HTMLDivElement>) => {
   e.currentTarget.classList.remove("active");
 };
 
+function shuffle(a: any) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
+}
+
 export default function Home() {
+  const [questions, setQuestions] = useState(materialQuestion);
+
+  const shuffleButton = () => {
+    setQuestions((prevState) => shuffle([...prevState]));
+  };
+
   return (
     <>
       <div className={styled.inner}>
@@ -30,6 +46,10 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      <button className={styled.shuffle} onClick={shuffleButton}>
+        シャッフル
+      </button>
     </>
   );
 }
