@@ -42,13 +42,14 @@
   color: #fff;
   padding: 10px 15px;
   cursor: pointer;
+  min-width: 94.79px;
 }
 
 .reverse {
   position: absolute;
   min-width: 94.79px;
-  top: 50px;
-  right: 0px;
+  top: 0px;
+  left: 0px;
   border: none;
   background-color: #000;
   color: #fff;
