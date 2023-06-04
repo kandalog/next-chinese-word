@@ -23,6 +23,9 @@ export const pinyin = [
   "méi bànfǎ",
   "quèshí",
   "lǐjiě",
+  "Kāichē",
+  "Shàngbān",
+  "Míngbái",
 ];
 
 export const ch = [
@@ -50,6 +53,9 @@ export const ch = [
   "没办法",
   "确实",
   "理解",
+  "开车",
+  "上班",
+  "明白",
 ];
 
 export const jp = [
@@ -77,4 +83,7 @@ export const jp = [
   "しようがない",
   "確かに",
   "理解する",
+  "車を運転する",
+  "出勤する",
+  "明らかである",
 ];
