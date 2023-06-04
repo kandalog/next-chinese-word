@@ -26,6 +26,9 @@ export const pinyin = [
   "Kāichē",
   "Shàngbān",
   "Míngbái",
+  "Guàng",
+  "shāngdiàn",
+  "Kǎlā OK",
 ];
 
 export const ch = [
@@ -56,6 +59,9 @@ export const ch = [
   "开车",
   "上班",
   "明白",
+  "逛",
+  "商店",
+  "卡拉OK",
 ];
 
 export const jp = [
@@ -86,4 +92,7 @@ export const jp = [
   "車を運転する",
   "出勤する",
   "明らかである",
+  "ぶらつく",
+  "お店",
+  "カラオケ",
 ];
