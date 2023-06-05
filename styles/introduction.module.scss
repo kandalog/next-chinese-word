@@ -1,0 +1,33 @@
+.container {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  inset: 0;
+  z-index: 2;
+  font-family: serif;
+  &:global(.active) {
+    display: block;
+  }
+}
+
+.inner {
+  width: fit-content;
+  min-width: 250px;
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  p {
+    font-size: 18px;
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.title {
+  font-size: 40px;
+  padding-bottom: 40px;
+}

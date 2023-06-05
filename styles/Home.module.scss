@@ -50,14 +50,20 @@
   border-radius: 100px;
 }
 
-.shuffle {
-}
+.introduction {
+  position: fixed;
+  z-index: 5;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  width: 30px;
+  height: 50px;
+  font-size: 20px;
 
-.reverse {
-}
-
-.pin {
-}
-
-.reset {
+  &:global(.active) {
+    color: #fff;
+  }
 }
