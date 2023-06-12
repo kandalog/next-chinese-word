@@ -1,4 +1,5 @@
 import { questions as materialQuestion } from "@/assets/question";
+import { remindQuestion } from "@/assets/question";
 import { useState } from "react";
 
 export const useQuestion = () => {
@@ -41,7 +42,7 @@ export const useQuestion = () => {
   const pin = () => {
     // 既にピンインモードの場合は処理しない
     if (!questions[0].en) return;
-    setQuestions(materialQuestion);
+    // setQuestions(materialQuestion);
     setQuestions((prevState) => {
       const newState = prevState.map((data) => {
         return {
@@ -57,13 +58,20 @@ export const useQuestion = () => {
     setQuestions(materialQuestion);
   };
 
+  // 復習モード
+  function changeToRemind() {
+    setQuestions(remindQuestion);
+  }
+
   return {
     handleOnClick,
     removeActiveClass,
     questions,
+    setQuestions,
     shuffleButton,
     reverseQuestion,
     pin,
+    changeToRemind,
     reset,
   };
 };
