@@ -1,5 +1,8 @@
-import { questions as materialQuestion } from "@/assets/question";
-import { remindQuestion } from "@/assets/question";
+import {
+  questions as materialQuestion,
+  remindQuestion,
+  loadQuestions,
+} from "@/assets/question";
 import { useState } from "react";
 
 export const useQuestion = () => {
@@ -63,6 +66,11 @@ export const useQuestion = () => {
     setQuestions(remindQuestion);
   }
 
+  // 中国語への道
+  function changeToLoad() {
+    setQuestions(loadQuestions);
+  }
+
   return {
     handleOnClick,
     removeActiveClass,
@@ -73,6 +81,7 @@ export const useQuestion = () => {
     pin,
     changeToRemind,
     reset,
+    changeToLoad,
   };
 };
 
