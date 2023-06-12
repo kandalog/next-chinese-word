@@ -16,7 +16,7 @@ export default function Home() {
     reset,
     changeToRemind,
     setQuestions,
-    changeToLoad,
+    changeToroad,
   } = useQuestion();
 
   const introductionHandler = () => {
@@ -48,7 +48,7 @@ export default function Home() {
       <div className={styled.inner}>
         {/* changeボタン */}
         <Button text="F" name={"remind"} onClick={changeToRemind} />
-        <Button text="L" name={"load"} onClick={changeToLoad} />
+        <Button text="L" name={"road"} onClick={changeToroad} />
         {questions.map((question) => (
           <div key={question.pi} className={styled.question}>
             <p onClick={(e) => handleOnClick(e)}>{question.pi}</p>

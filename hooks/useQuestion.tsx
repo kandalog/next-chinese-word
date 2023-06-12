@@ -1,7 +1,7 @@
 import {
   questions as materialQuestion,
   remindQuestion,
-  loadQuestions,
+  roadQuestions,
 } from "@/assets/question";
 import { useState } from "react";
 
@@ -67,8 +67,8 @@ export const useQuestion = () => {
   }
 
   // 中国語への道
-  function changeToLoad() {
-    setQuestions(loadQuestions);
+  function changeToroad() {
+    setQuestions(roadQuestions);
   }
 
   return {
@@ -81,7 +81,7 @@ export const useQuestion = () => {
     pin,
     changeToRemind,
     reset,
-    changeToLoad,
+    changeToroad,
   };
 };
 
