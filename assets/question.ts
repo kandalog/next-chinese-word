@@ -20,7 +20,7 @@ for (let i = 0; i < pinyin0.length; i++) {
 }
 
 for (let i = 0; i < pinyin_load.length; i++) {
-  remindQuestion.push({
+  loadQuestions.push({
     jp: jp_load[i],
     ch: ch_load[i],
     pi: pinyin_load[i],
@@ -35,3 +35,5 @@ for (let i = 0; i < pinyin.length; i++) {
 for (let i = 0; i < pinyin2.length; i++) {
   questions2.push({ jp: jp2[i], ch: ch2[i], pi: pinyin2[i], en: en2[i] });
 }
+
+console.log(loadQuestions);
