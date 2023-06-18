@@ -28,6 +28,17 @@ export const pinyin = [
   "jiàqián",
   "rì yuán",
   "línghuā qián",
+  "Qiáo",
+  "tǎng",
+  "chuānghù",
+  "shùmǎ",
+  "xiàngjī",
+  "cháng",
+  "Kuàngquán shuǐ",
+  "mǎlù",
+  "niúzǎikù",
+  "zhàn",
+  "háizi",
 ];
 
 export const en = [
@@ -60,6 +71,17 @@ export const en = [
   "jiaqian",
   "ri yuan",
   "linghua qian",
+  "Qiao",
+  "Tang",
+  "Chuanghu",
+  "Shuma",
+  "Xiangji",
+  "Chang",
+  "Kuangquan shui",
+  "malu",
+  "niuzaiku",
+  "zhan",
+  "haizi",
 ];
 
 export const ch = [
@@ -92,6 +114,17 @@ export const ch = [
   "价钱",
   "日元",
   "零花钱",
+  "桥",
+  "躺",
+  "窗户",
+  "数码",
+  "相机",
+  "尝",
+  "矿泉水",
+  "马路",
+  "牛仔裤",
+  "站",
+  "孩子",
 ];
 
 export const jp = [
@@ -124,4 +157,15 @@ export const jp = [
   "値段",
   "円",
   "小遣い",
+  "橋",
+  "横たわる",
+  "窓",
+  "デジタル",
+  "カメラ",
+  "味見する",
+  "ミネラルウォーター",
+  "道・通り",
+  "ジーンズ",
+  "立つ",
+  "子供",
 ];
