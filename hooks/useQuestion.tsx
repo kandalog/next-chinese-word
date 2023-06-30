@@ -1,6 +1,5 @@
 import {
   questions as materialQuestion,
-  remindQuestion,
   roadQuestions,
 } from "@/assets/question";
 import { useState } from "react";
@@ -61,11 +60,6 @@ export const useQuestion = () => {
     setQuestions(materialQuestion);
   };
 
-  // 復習モード
-  function changeToRemind() {
-    setQuestions(remindQuestion);
-  }
-
   // 中国語への道
   function changeToroad() {
     setQuestions(roadQuestions);
@@ -79,7 +73,6 @@ export const useQuestion = () => {
     shuffleButton,
     reverseQuestion,
     pin,
-    changeToRemind,
     reset,
     changeToroad,
   };

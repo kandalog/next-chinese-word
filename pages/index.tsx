@@ -18,7 +18,6 @@ export default function Home() {
     reverseQuestion,
     pin,
     reset,
-    changeToRemind,
     setQuestions,
     changeToroad,
   } = useQuestion();
@@ -51,7 +50,6 @@ export default function Home() {
 
       <div className={styled.inner}>
         {/* changeボタン */}
-        <Button text="F" name={"remind"} onClick={changeToRemind} />
         <Button text="R1" name={"road"} onClick={changeToroad} />
         <Button
           text="R2"
@@ -63,11 +61,11 @@ export default function Home() {
           name={"road3"}
           onClick={() => setQuestions(roadQuestions3)}
         />
-        <Button
+        {/* <Button
           text="R4"
           name={"road4"}
           onClick={() => setQuestions(roadQuestions4)}
-        />
+        /> */}
         {questions.map((question) => (
           <div key={question.pi} className={styled.question}>
             <p onClick={(e) => handleOnClick(e)}>{question.pi}</p>

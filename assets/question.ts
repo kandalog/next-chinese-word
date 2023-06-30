@@ -1,4 +1,3 @@
-import { pinyin0, ch0, jp0, en0 } from "./data/remind";
 import { pinyin_road, ch_road, jp_road, en_road } from "./data/road";
 import { pinyin_road2, ch_road2, jp_road2, en_road2 } from "./data/road2";
 import { pinyin_road3, ch_road3, jp_road3, en_road3 } from "./data/road3";
@@ -14,18 +13,16 @@ type questionType = {
   en?: string;
 };
 
-export const remindQuestion: questionType[] = [];
+export const questions: questionType[] = [];
+export const questions2: questionType[] = [];
 
 export const roadQuestions: questionType[] = [];
 export const roadQuestions2: questionType[] = [];
 export const roadQuestions3: questionType[] = [];
 export const roadQuestions4: questionType[] = [];
 
-export const questions: questionType[] = [];
-export const questions2: questionType[] = [];
-
-for (let i = 0; i < pinyin0.length; i++) {
-  remindQuestion.push({ jp: jp0[i], ch: ch0[i], pi: pinyin0[i], en: en0[i] });
+for (let i = 0; i < pinyin.length; i++) {
+  questions.push({ jp: jp[i], ch: ch[i], pi: pinyin[i], en: en[i] });
 }
 
 // road
@@ -60,10 +57,6 @@ for (let i = 0; i < pinyin_road4.length; i++) {
     pi: pinyin_road4[i],
     en: en_road4[i],
   });
-}
-
-for (let i = 0; i < pinyin.length; i++) {
-  questions.push({ jp: jp[i], ch: ch[i], pi: pinyin[i], en: en[i] });
 }
 
 for (let i = 0; i < pinyin2.length; i++) {
