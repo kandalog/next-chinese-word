@@ -18,6 +18,8 @@ export const pinyin = [
   "dàn",
   "dà bùfèn",
   "dìfāng",
+  "gāoxìng",
+  "fāngfǎ",
 ];
 
 export const en = [
@@ -40,6 +42,8 @@ export const en = [
   "dan",
   "da bufen",
   "difang",
+  "gaoxing",
+  "fangfa",
 ];
 
 export const ch = [
@@ -62,6 +66,8 @@ export const ch = [
   "但",
   "大部分",
   "地方",
+  "高兴",
+  "方法",
 ];
 
 export const jp = [
@@ -84,4 +90,6 @@ export const jp = [
   "しかし",
   "大部分",
   "場所、ところ",
+  "嬉しい",
+  "方法",
 ];
