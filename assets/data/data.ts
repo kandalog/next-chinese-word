@@ -20,6 +20,9 @@ export const pinyin = [
   "dìfāng",
   "gāoxìng",
   "fāngfǎ",
+  "Páshān",
+  "huàzhuāngpǐn",
+  "chéngjī",
 ];
 
 export const en = [
@@ -44,6 +47,9 @@ export const en = [
   "difang",
   "gaoxing",
   "fangfa",
+  "pashan",
+  "huazhuangpin",
+  "chengji",
 ];
 
 export const ch = [
@@ -68,6 +74,9 @@ export const ch = [
   "地方",
   "高兴",
   "方法",
+  "爬山",
+  "化妆品",
+  "成绩",
 ];
 
 export const jp = [
@@ -92,4 +101,7 @@ export const jp = [
   "場所、ところ",
   "嬉しい",
   "方法",
+  "山に登る",
+  "化粧品",
+  "成績",
 ];
